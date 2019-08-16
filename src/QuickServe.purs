@@ -48,7 +48,8 @@ import Node.URL (parse)
 import Prim.Row (class Cons)
 import Record (get)
 import Type.Proxy (Proxy(..))
-import Type.Row (class RowToList, Cons, Nil, RLProxy(..), kind RowList)
+import Type.Data.RowList (RLProxy(..))
+import Prim.RowList (class RowToList, Cons, Nil, kind RowList)
 import Unsafe.Coerce (unsafeCoerce)
 
 -- | A type class for types of values which define

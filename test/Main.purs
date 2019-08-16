@@ -6,9 +6,8 @@ import Data.Maybe (Maybe(..))
 import Effect (Effect)
 import Effect.Class (liftEffect)
 import Effect.Console (log)
-import Foreign.Class (class Decode, class Encode)
-import Foreign.Generic (defaultOptions, genericDecode, genericEncode)
-import Foreign.Generic.Types (Options)
+import Foreign.Generic (genericDecode, genericEncode)
+import Foreign.Generic.Class (class Decode, class Encode, Options, defaultOptions)
 import QuickServe (Capture(..), GET, JSON(..), POST, RequestBody(..), quickServe)
 
 newtype Message = Message { message :: String }
